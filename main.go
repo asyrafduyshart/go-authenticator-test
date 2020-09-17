@@ -35,8 +35,8 @@ func main() {
 
 	secretBase32 := base32.StdEncoding.EncodeToString(secret)
 
-	account := "developer@lidowin.com"
-	issuer := "SuperAdminService"
+	account := "example@email.com"
+	issuer := "SampleService"
 
 	URL, err := url.Parse("otpauth://totp")
 	if err != nil {
